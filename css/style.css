@@ -34,3 +34,18 @@ img {
 	width: 400px;
 	height: 300px;
 }
+
+figure {
+	margin-left: 0;
+}
+figcaption {
+	font-size: 3rem;
+	color: #777;
+	background-color: #fff;
+	opacity: 0.5em;
+}
+
+.activeImg {
+	font-size: 3rem;
+	color: #000;
+}
