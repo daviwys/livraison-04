@@ -9,9 +9,14 @@ h1 {
 	font-size: 3rem;
 }
 
+button {
+	cursor: pointer;
+}
+
 div {
-	width: 400px;
-	margin: auto;
+	width: 800px;
+	margin: auto;/*
+	margin-top: -20px;*/
 }
 
 ul {
@@ -23,29 +28,39 @@ ul {
 
 li {
 	position: absolute;
-	margin-left: -40px;
+	margin-left: -80px;
+	opacity: 0;
+	transition: opacity 1s ease;
 }
 
-.hide {
+/*.hide {
 	display: none;
-}
+}*/
 
+.look {
+  /*display: none;*/
+  transition: opacity 1s ease;
+  opacity: 1;
+  position: absolute;
+  margin-left: -80px;
+}
 img {
-	width: 400px;
-	height: 300px;
+	width: 800px;
+	height: 600px;
+	position: absolute;
 }
 
-figure {
-	margin-left: 0;
+figure {/*
+	margin-left: 0;*/
 }
 figcaption {
 	font-size: 3rem;
 	color: #777;
 	background-color: rgba(255, 255, 255, 0.15);
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 	position: absolute;
-	width: 100%;
-	bottom: 13px;
+	width: 800px;
+	bottom: -600px;
 }
 
 .activeImg {
