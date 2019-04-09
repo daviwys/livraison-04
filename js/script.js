@@ -1,10 +1,21 @@
 'use strict';
 
+let countNext = 0;
+
 function previous() {
-	console.log('Pas encore fait');
+	let list = document.getElementsByTagName('li');
+
+	if(countNext == 0) {
+		list[countNext].classList.toggle('hide');
+		list[list.length - 1].classList.toggle('hide');	
+		countNext = list.length - 1;
+	} else {	
+		list[countNext].classList.toggle('hide');	
+		list[countNext - 1].classList.toggle('hide');	
+		countNext--;
+	}
 }
 
-let countNext = 0;
 function next() {
 	let list = document.getElementsByTagName('li');
 
@@ -17,6 +28,4 @@ function next() {
 		list[countNext + 1].classList.toggle('hide');	
 		countNext++;
 	}
-
-	//	console.log(countNext);
 }
