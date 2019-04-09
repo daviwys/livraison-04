@@ -1,0 +1,36 @@
+html, body {
+	font-family: Verdana, Arial, serif;
+	font-size: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+div {
+	width: 400px;
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+	margin-right: 40px;
+	margin-bottom: 50px;
+}
+
+li {
+	position: absolute;
+	margin-left: -40px;
+}
+
+.hide {
+	display: none;
+}
+
+img {
+	width: 400px;
+	height: 300px;
+}

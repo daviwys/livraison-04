@@ -1,0 +1,32 @@
+'use strict';
+
+function previous() {
+	console.log('Pas encore fait');
+}
+
+let countNext = 0;
+function next() {
+	let list = document.getElementsByTagName('li');
+
+	console.log(countNext);
+	switch (countNext) {	
+		case 1:
+			list[2].classList.toggle('hide');
+			list[0].classList.toggle('hide');
+			countNext = 2;
+			break;
+
+		case 2:
+			list[0].classList.toggle('hide');
+			list[1].classList.toggle('hide');
+			countNext = 0;
+			break;
+
+		case 0:
+			list[1].classList.toggle('hide');
+			list[2].classList.toggle('hide');
+			countNext = 1;
+			break;
+
+	}
+}
