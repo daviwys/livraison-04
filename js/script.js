@@ -1,5 +1,18 @@
 'use strict';
 
+function darkMode() {
+	document.getElementsByTagName('link')[0].href = 'css/darkmode.css';
+	document.getElementsByTagName('button')[1].setAttribute('onclick', `whiteMode()`);
+	document.getElementsByTagName('button')[1].innerHTML = 'White mode';
+
+}
+
+function whiteMode() {
+	document.getElementsByTagName('link')[0].href = 'css/style.css';
+	document.getElementsByTagName('button')[1].setAttribute('onclick', `darkMode()`);
+	document.getElementsByTagName('button')[1].innerHTML = 'Dark mode';
+}
+
 let countNext = 0;
 
 function previous() {
